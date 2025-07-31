@@ -6,6 +6,8 @@
 
 ASkyAbilityActor::ASkyAbilityActor()
 {
+	PrimaryActorTick.bCanEverTick = true;
+	
 	AbilitySystemComponent = CreateDefaultSubobject<USkyAbilitySystemComponent>(TEXT("AbilitySystemComponent"));
 }
 
