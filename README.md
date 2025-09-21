@@ -34,4 +34,14 @@ The Sky Ability System is a custom gameplay ability system plugin for Unreal Eng
 4. Use `SkyAbilitySystemComponent` to manage abilities
 5. Utilize `SkyGameplayTags` to categorize and organize abilities
 
-For detailed implementation examples and API documentation, please refer to the header files in the Public directory.
+For detailed implementation examples and API documentation, please refer to the header files in the Public directory.For detailed implementation examples and API documentation, please refer to the header files in the Public directory.## Troubleshooting
+
+### Linker Errors
+If you encounter `LNK1120` (unresolved external symbol) errors when extending the SkyAbilitySystem classes in C++, make sure the following modules are added to your project's Build.cs file:
+``` c++
+PrivateDependencyModuleNames.AddRange(new string[] {
+  "SkyAbilitySystem",
+  "GameplayAbilities",
+  "GameplayTags"
+});
+```
