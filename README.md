@@ -31,10 +31,12 @@ The Sky Ability System is a custom gameplay ability system plugin for Unreal Eng
 1. Add the plugin to your Unreal Engine project
 2. Inherit from `SkyAbilityCharacter` for characters that need ability support
 3. Inherit from `SkyAbilityActor` for custom actors that need ability support
-4. Use `SkyAbilitySystemComponent` to manage abilities
-5. Utilize `SkyGameplayTags` to categorize and organize abilities
+4. Use exposed functions and GAS features in blueprints
+5. [Watch this GDC talk](https://zeploc.github.io/) on how to leverage this plugin and GAS
 
-For detailed implementation examples and API documentation, please refer to the header files in the Public directory.For detailed implementation examples and API documentation, please refer to the header files in the Public directory.## Troubleshooting
+For detailed implementation examples and API documentation, please refer to the header files in the Public directory.
+
+## Troubleshooting
 
 ### Linker Errors
 If you encounter `LNK1120` (unresolved external symbol) errors when extending the SkyAbilitySystem classes in C++, make sure the following modules are added to your project's Build.cs file:
